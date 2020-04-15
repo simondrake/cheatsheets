@@ -94,6 +94,10 @@ Create a symbolic link called `myApplication` that is linked to `myApplication_1
 
 `df -h / | tail -1 | awk '{printf("\"%s\"\n", $5);}'`
 
+## Print all columns after, and including, the 5th column
+
+`df -h / | tail -1 | awk '{ s = ""; for (i = 5; i <= NF; i++) s = s $i " "; print s }'`
+
 # NC
 
 `nc -z -v {host} {port}`
