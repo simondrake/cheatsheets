@@ -98,6 +98,10 @@ Create a symbolic link called `myApplication` that is linked to `myApplication_1
 
 `df -h / | tail -1 | awk '{ s = ""; for (i = 5; i <= NF; i++) s = s $i " "; print s }'`
 
+## Change the field seperator
+
+`awk '{print $9}' | awk -F'/' '{print $8}'`
+
 # NC
 
 `nc -z -v {host} {port}`
