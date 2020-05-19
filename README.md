@@ -11,6 +11,7 @@ This repository is not designed to be for everyone, because it's very specific t
 | Cheatsheet | Description
 |-|-|
 | [Curl](./curl.md) | Specific to the [curl](https://curl.haxx.se/) command |
+| [Design Patterns](./designPatterns.md) | Explanations of common design patterns |
 | [Encodings](./encodings.md) | Encodings (e.g. URL and Unicode) |
 | [Git](./git.md) | Specific to [git](https://git-scm.com/) |
 | [Go](./go.md) | Specific to the [Go](https://golang.org/) programming language | 
