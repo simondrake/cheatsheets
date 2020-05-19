@@ -1,3 +1,5 @@
+# TOC
+
 - [Factory Pattern](#factory-pattern)
 - [Builder Pattern](#builder-pattern)
 
