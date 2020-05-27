@@ -15,3 +15,4 @@ go test dir/*.go -tags=integration -v -run TestToRun -testify.m SuiteTestToRun
 
 ### Goland Debugger Equivalent
 
+![goland-suite-test-debugger](./static/images/goland-suite-test-debugger.png)
