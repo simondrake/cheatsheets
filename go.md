@@ -12,3 +12,6 @@ go test ./... -run TestToRun -testify.m SuiteTestToRun
 // Example running in a single directory, with a custom tag, in verbose mode
 go test dir/*.go -tags=integration -v -run TestToRun -testify.m SuiteTestToRun
 ```
+
+### Goland Debugger Equivalent
+
