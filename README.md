@@ -10,6 +10,7 @@ This repository is not designed to be for everyone, because it's very specific t
 
 | Cheatsheet | Description
 |-|-|
+| [Bash](./bash.md) | Specific to Bash (command line or scripting) |
 | [Curl](./curl.md) | Specific to the [curl](https://curl.haxx.se/) command |
 | [Design Patterns](./designPatterns.md) | Explanations of common design patterns |
 | [Encodings](./encodings.md) | Encodings (e.g. URL and Unicode) |
