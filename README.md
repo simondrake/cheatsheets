@@ -18,6 +18,7 @@ This repository is not designed to be for everyone, because it's very specific t
 | [Go](./go.md) | Specific to the [Go](https://golang.org/) programming language | 
 | [Intellij](./intellij.md) | Specific to [Jetbrains Intellij](https://www.jetbrains.com/idea/) products | 
 | [jq](./jq.md) | Specific to the [jq](https://stedolan.github.io/jq/) command |
+| [keyboard shortcuts](.keyboard_shortcuts.md) | Keyboard shortcuts for various applications |
 | [linux](./linux.md) | Linux knowledge that doesn't need to be in a specific doc of it's own |
 | [terms](./terms.md) | Programming terms that are commonly used and I always have to Google |
 | [vi](./vi.md) | Specific to the [vi](https://en.wikipedia.org/wiki/Vi) text editor |
