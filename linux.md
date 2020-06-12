@@ -45,6 +45,12 @@ Create SSH tunnel that when a connection is made to the port `5044` on `10.10.10
 
 `ssh -R 5044:localhost:5044 10.10.10.10`
 
+### Copy contents of a remote file into clipboard, using `pbcopy`
+
+```
+ssh -i ~/path/to/key ubuntu@[IP] "cat [path-to-file]" | pbcopy
+```
+
 #Symbolic-Links
 
 ### Symbolic-Links
