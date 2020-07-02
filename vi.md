@@ -1,9 +1,6 @@
 # Vi
 
-<details>
-  <summary>Modes</summary>
-  
-  ---
+## Modes
 |Command|Mode|
 | -- | -- |
 |`i`|Insert|
@@ -17,17 +14,12 @@
 |`m`|Mark|
 |`w`|Word|
 |`aw`|Around word|
-</details>
 
-<details>
-  <summary>Editing</summary>
-  
-  ---
-  
-<details>
-  <summary>Insert</summary>
-  
-  ---
+
+## Editing
+
+### Insert
+
 |Command|Description|
 | -- | -- |
 |`p`|Paste after current position|
@@ -36,42 +28,27 @@
 |`o`|Insert new line after the current one|
 |`O`|Insert new line before the current one|
 
-</details>
+### Delete
 
-<details>
-  <summary>Delete</summary>
-  
-  ---
 |Command|Description|
 | -- | -- |
 |`x`|Delete character under character|
 |`dd`|Delete current line|
-</details>
 
-<details>
-  <summary>Edit</summary>
-  
-  ---
+### Edit
+
 |Command|Description|
 | -- | -- |
 |`cw` or `C`|Replace from the cursor to the end of the word|
-</details>
 
-<details>
-  <summary>Copy</summary>
-  
-  ---
+### Copy
+
 |Command|Description|
 | -- | -- |
 |`yy`|Copy the current line|
-</details>
 
-</details>
+## Navigating
 
-<details>
-  <summary>Navigating</summary>
-  
-  ---
 |Command|Description|
 | -- | -- |
 |`0`|Go to first column|
@@ -87,13 +64,11 @@
 |`*`|Go to the next occurence of the word under the cursor|
 |`#`|Go to the previous occurence of the word under the cursor|
 |`3fa`|Find the third occurence of `a` on this line|
-</details>
+|`zc`|Close fold|
+|`oc`|Open fold|
 
+## Examples
 
-<details>
-  <summary>Examples</summary>
-  
-  ---
 |Command|Description|
 | -- | -- |
 |`2dd`|Delete two lines|
@@ -109,25 +84,18 @@
 |`V`|Visual Mode (line)|
 |`v`|Visual Mode (character)|
 |`CTRL` + `v`|Visual Mode (block)|
-</details>
 
-<details>
-  <summary>Surround</summary>
-  
-  ---
+
+### Surround
+
 | Command | Description | Examples |
 | --| -- | -- |
 |`ys`|Add surrounding|`ysiw`(add surrounding in word)|
 |`ds`|Delete surrounding|`dst` (delete tags)|
 |`cs`|Change surrounding|`cs"'` (change from `"` to `'`)
-</details>
 
+## Plugins
 
-<details>
-  <summary>Plugins</summary>
-  
-  ---
 |Name|Link|
 |--|--|
 |multiple-cursors|[link](https://github.com/terryma/vim-multiple-cursors)|
-</details>
