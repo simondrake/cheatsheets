@@ -66,6 +66,8 @@
 |`3fa`|Find the third occurence of `a` on this line|
 |`zc`|Close fold|
 |`oc`|Open fold|
+|`[{`|Beginning of code block (that use curly brackets)|
+|`]}`|End of code block (that use curly brackets)|
 
 ## Examples
 
