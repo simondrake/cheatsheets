@@ -69,6 +69,13 @@
 |`[{`|Beginning of code block (that use curly brackets)|
 |`]}`|End of code block (that use curly brackets)|
 
+## Splits
+
+|Command|Description|
+| -- | -- |
+|`:vsp`|Create a vertical split|
+|`:sp`|Create a horizontal split|
+
 ## Examples
 
 |Command|Description|
