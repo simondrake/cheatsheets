@@ -21,4 +21,5 @@ This repository is not designed to be for everyone, because it's very specific t
 | [keyboard shortcuts](.keyboard_shortcuts.md) | Keyboard shortcuts for various applications |
 | [linux](./linux.md) | Linux knowledge that doesn't need to be in a specific doc of it's own |
 | [terms](./terms.md) | Programming terms that are commonly used and I always have to Google |
+| [tmux](./tmux.md) | Specific to tmux |
 | [vi](./vi.md) | Specific to the [vi](https://en.wikipedia.org/wiki/Vi) text editor |
