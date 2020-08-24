@@ -118,3 +118,20 @@
 |Name|Link|
 |--|--|
 |multiple-cursors|[link](https://github.com/terryma/vim-multiple-cursors)|
+
+## NERD Tree
+
+### Mappings
+
+* `t`: Open the selected file in a new tab
+* `i`: Open the selected file in a horizontal split window
+* `s`: Open the selected file in a vertical split window
+* `I`: Toggle hidden files
+* `m`: Show the NERD Tree menu
+* `R`: Refresh the tree, useful if files change outside of Vim
+* `?`: Toggle NERD Tree's quick help
+
+### Creating a new file or directory
+
+First, bring up NERDTree and navigate to the directory where you want to create the new file. Press `m` to bring up the NERDTree Filesystem Menu. This menu allows you to create, rename, and delete files and directories. Type `a` to add a child node and then simply enter the filename. To create a directory follow the same steps but append a `/` to the filename.
+
