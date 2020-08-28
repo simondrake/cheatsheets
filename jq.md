@@ -17,3 +17,36 @@ echo file.json | jq '.[] | select( .name | contains("someText") ) | {name: .name
 ```
 echo file.json | jq -r '.items | .[] | select(.a.path.to.an.array[]?.key != null) | .name'
 ```
+
+#### Add a field to an object
+
+```
+echo '{"hello": "world"}' | jq --arg foo bar '. + {foo: $foo}' 
+
+{
+  "hello": "world",
+  "foo": "bar"
+}
+```
+
+```
+// Preserve nested objects with * and concat strings
+echo '{"hello": {"value": "world"}}' | jq --arg foo bar '. * {"hello": {foo: ("not" + $foo)}}'
+
+{
+  "hello": {
+    "value": "world",
+    "foo": "notbar"
+  }
+}
+
+// Using + will not preserve nested objects
+echo '{"hello": {"value": "world"}}' | jq --arg foo bar '. + {"hello": {foo: ("not" + $foo)}}'                                                                                           
+
+{
+  "hello": {
+    "foo": "notbar"
+  }
+}
+
+```
