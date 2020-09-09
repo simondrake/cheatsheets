@@ -119,6 +119,13 @@
 |--|--|
 |multiple-cursors|[link](https://github.com/terryma/vim-multiple-cursors)|
 
+### Vim-Go
+
+|Command|Description|
+|--|--|
+|`:GoReferrers`|Find usages|
+
+
 ## NERD Tree
 
 ### Mappings
