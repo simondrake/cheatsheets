@@ -16,9 +16,7 @@ for s in a b c d e; do echo "$s"; done
 p=path/to/vault/entry; for i in $(vault kv list "$p" | sed 1,2d); do vault kv delete "$p/$i"; done
 ```
 
-# Running Commands
-
-### Run command every interval
+## Run command every interval
 
 ##### Every 1 second
 
@@ -34,7 +32,7 @@ p=path/to/vault/entry; for i in $(vault kv list "$p" | sed 1,2d); do vault kv de
 
 `while sleep 0.1; do echo "Hello"; done`
 
-# AWK
+## AWK
 
 ## Print the 5th column
 `df -h / | tail -1 | awk '{print $5}'`
@@ -57,3 +55,8 @@ awk '{print $9}' | awk -F'/' '{print $8}'
 env | grep -i co2 | awk -F= '{print $1}'
 ```
 
+## Unset multiple env vars with a prefix
+
+```
+unset `env | grep -i co2 | awk -F= '{print $1}'`
+```
