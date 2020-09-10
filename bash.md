@@ -58,5 +58,5 @@ env | grep -i co2 | awk -F= '{print $1}'
 ## Unset multiple env vars with a prefix
 
 ```
-unset `env | grep -i co2 | awk -F= '{print $1}'`
+unset `env | grep -i prefix | awk -F= '{print $1}'`
 ```
