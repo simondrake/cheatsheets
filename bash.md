@@ -15,3 +15,45 @@ for s in a b c d e; do echo "$s"; done
 ```
 p=path/to/vault/entry; for i in $(vault kv list "$p" | sed 1,2d); do vault kv delete "$p/$i"; done
 ```
+
+# Running Commands
+
+### Run command every interval
+
+##### Every 1 second
+
+`while sleep 1; do [cmd]; done` 
+
+`while sleep 1; do echo "Hello"; done`
+
+`while true; do clear; ./runScript.sh; sleep 1; done`
+
+##### Every millisecond
+
+`while sleep 0.1; do [cmd]; done` 
+
+`while sleep 0.1; do echo "Hello"; done`
+
+# AWK
+
+## Print the 5th column
+`df -h / | tail -1 | awk '{print $5}'`
+
+## Print the 5th column with quotation marks
+
+`df -h / | tail -1 | awk '{printf("\"%s\"\n", $5);}'`
+
+## Print all columns after, and including, the 5th column
+
+`df -h / | tail -1 | awk '{ s = ""; for (i = 5; i <= NF; i++) s = s $i " "; print s }'`
+
+## Change the field seperator
+
+```
+// Print the 9th column, with a `/` field seperator
+awk '{print $9}' | awk -F'/' '{print $8}'
+
+// Print the 1st column, with a `=` field separator
+env | grep -i co2 | awk -F= '{print $1}'
+```
+
