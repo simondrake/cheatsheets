@@ -72,42 +72,6 @@ Create a symbolic link called `myApplication` that is linked to `myApplication_1
 
 `lsof | awk '{ print $2 " " $1; }' | sort -rn | uniq -c | sort -rn | head -20`
 
-# Running Commands
-
-### Run command every interval
-
-##### Every 1 second
-
-`while sleep 1; do [cmd]; done` 
-
-`while sleep 1; do echo "Hello"; done`
-
-`while true; do clear; ./runScript.sh; sleep 1; done`
-
-##### Every millisecond
-
-`while sleep 0.1; do [cmd]; done` 
-
-`while sleep 0.1; do echo "Hello"; done`
-
-
-# AWK
-
-## Print the 5th column
-`df -h / | tail -1 | awk '{print $5}'`
-
-## Print the 5th column with quotation marks
-
-`df -h / | tail -1 | awk '{printf("\"%s\"\n", $5);}'`
-
-## Print all columns after, and including, the 5th column
-
-`df -h / | tail -1 | awk '{ s = ""; for (i = 5; i <= NF; i++) s = s $i " "; print s }'`
-
-## Change the field seperator
-
-`awk '{print $9}' | awk -F'/' '{print $8}'`
-
 # NC
 
 `nc -z -v {host} {port}`
