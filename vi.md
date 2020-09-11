@@ -125,6 +125,14 @@
 |--|--|
 |`:GoReferrers`|Find usages|
 
+### vim-gitgutter
+
+|Command|Description|
+|--|--|
+|`]c`|Next Hunk|
+|`[c`|Previous Hunk|
+
+
 
 ## NERD Tree
 
