@@ -132,6 +132,14 @@
 |`]c`|Next Hunk|
 |`[c`|Previous Hunk|
 
+### nerdcommenter
+
+|Command|Description|
+|--|--|
+|`[count]<leader>cc`|Comment|
+|`[count]<leader>cu`|Uncomment|
+|`[count]<leader>c<space>`|Toggle|
+
 
 
 ## NERD Tree
