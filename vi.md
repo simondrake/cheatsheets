@@ -56,7 +56,7 @@
 |`:%s/foo/bar/gc`|Change each 'foo' to 'bar', but ask for confirmation first.|
 |`:%s/\<foo\>/bar/gc`|Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.|
 |`:%s/foo/bar/gci`|Change each 'foo' (case insensitive due to the i flag) to 'bar'; ask for confirmation.|
-|`:%s/foo/bar/gcI`|Change each 'foo' (case sensitive due to the I flag) to 'bar'; ask for confirmation.
+|`:%s/foo/bar/gcI`|Change each 'foo' (case sensitive due to the I flag) to 'bar'; ask for confirmation.|
 
 ## Navigating
 
@@ -107,7 +107,7 @@
 |`<n>df<x>`|Delete up to the nth character of x|
 |`V100G`|Select the current line up to and including line 100|
 |`<C-V>$A,<Esc>`|Add a comma to the end of the line (`$A` is append to line)|
-
+|`:g/^$/d`|Delete empty lines. `:g` executes a command (`:d` - delete) on lines which match a regex (`^$` = blank line)|
 
 ### Surround
 
