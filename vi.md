@@ -103,6 +103,9 @@
 |`V`|Visual Mode (line)|
 |`v`|Visual Mode (character)|
 |`CTRL` + `v`|Visual Mode (block)|
+|`<n>df<x>`|Delete up to the nth character of x|
+|`V100G`|Select the current line up to and including line 100|
+|`<C-V>$A,<Esc>`|Add a comma to the end of the line (`$A` is append to line)|
 
 
 ### Surround
