@@ -14,6 +14,7 @@
 |`m`|Mark|
 |`w`|Word|
 |`aw`|Around word|
+|`J`|Join|
 
 
 ## Editing
