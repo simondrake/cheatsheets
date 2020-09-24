@@ -108,6 +108,7 @@
 |`V100G`|Select the current line up to and including line 100|
 |`<C-V>$A,<Esc>`|Add a comma to the end of the line (`$A` is append to line)|
 |`:g/^$/d`|Delete empty lines. `:g` executes a command (`:d` - delete) on lines which match a regex (`^$` = blank line)|
+|`:.,+20norm .`|Repeat the last command on the next 20 lines|
 
 ### Surround
 
