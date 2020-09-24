@@ -60,3 +60,10 @@ env | grep -i co2 | awk -F= '{print $1}'
 ```
 unset `env | grep -i prefix | awk -F= '{print $1}'`
 ```
+
+## Sed
+
+|Command|Description|
+| -- | -- |
+|`sed '/^$/d'`|Remove blank lines|
+|`sed '/^  /d'`|Remove lines starting with two spaces|
