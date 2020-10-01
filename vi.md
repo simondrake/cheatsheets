@@ -86,6 +86,8 @@
 | -- | -- |
 |`:vsp`|Create a vertical split|
 |`:sp`|Create a horizontal split|
+|`:resize 60`, `:res +5`, `:res -5`|Change the height of the window|
+|`:vertical resize 80`, `:vertical resize +5`, `:vertical resize -5`|Change the width of the window|
 
 ## Examples
 
