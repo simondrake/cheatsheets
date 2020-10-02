@@ -12,6 +12,14 @@ git checkout branch_name -- file.go
 git rebase -i HEAD~[NUMBER OF COMMITS]
 ```
 
+#### Reset local from remote
+
+```
+git reset --hard origin/master
+
+git reset --hard origin/<branch_name>
+```
+
 #### Find a deleted file in commit history
 
 If you do not know the exact path you may use
