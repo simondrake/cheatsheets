@@ -67,3 +67,4 @@ unset `env | grep -i prefix | awk -F= '{print $1}'`
 | -- | -- |
 |`sed '/^$/d'`|Remove blank lines|
 |`sed '/^  /d'`|Remove lines starting with two spaces|
+|`sed 's/^textToRemove//g'`|Remove text|
