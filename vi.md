@@ -15,6 +15,7 @@
 |`w`|Word|
 |`aw`|Around word|
 |`J`|Join|
+|`zf`|Fold|
 
 
 ## Editing
