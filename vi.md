@@ -20,6 +20,16 @@
 
 ## Editing
 
+### Correcting
+|Command|Description|
+| -- | -- |
+|`t<char>`|Exclusive match: continue up to (but not including) the next `<char>` on this line|
+|`f<char>`|Inclusive match: continue up to (and including) the next `<char>` on this line|
+|`i<char>`|Exclusive inner match: apply to text bounded by `<char>`, where `<char>` is from a limited set of characters that come in pairs, like quotes, parentheses, brackets, etc.|
+|`a<char>`|Inclusive inner match: same as above, except it includes `<char>` on both ends|
+|`v$F<char>d`|Delete to the last `<char>` on this line. `v` - visual mode, `$` - to go the end of the line, `F<char>` - search backwards for `<char>`, `d` - delete|
+
+
 ### Insert
 
 |Command|Description|
