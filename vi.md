@@ -19,6 +19,13 @@
 
 
 ## Editing
+|Command|Description|
+| -- | -- |
+|`i` `a`|Enter insert mode (insert at cursor/append after cursor)|
+|`I` `A`|Enter insert mode (insert at beginning of line/append to end of line)|
+|`o` `O`|Open new line (below the current line/above the current line)|
+|`u` `ctrl+r`|Undo and redo|
+|`.`|Repeat the previous command. `5.` repeats it five times|
 
 ### Correcting
 |Command|Description|
@@ -28,6 +35,8 @@
 |`i<char>`|Exclusive inner match: apply to text bounded by `<char>`, where `<char>` is from a limited set of characters that come in pairs, like quotes, parentheses, brackets, etc.|
 |`a<char>`|Inclusive inner match: same as above, except it includes `<char>` on both ends|
 |`v$F<char>d`|Delete to the last `<char>` on this line. `v` - visual mode, `$` - to go the end of the line, `F<char>` - search backwards for `<char>`, `d` - delete|
+
+
 
 
 ### Insert
@@ -91,6 +100,11 @@
 |`oc`|Open fold|
 |`[{`|Beginning of code block (that use curly brackets)|
 |`]}`|End of code block (that use curly brackets)|
+|`b` `w`|Move back by token/forward by token/back by word/forward by word. A token is a sequence of letters, digits, and underscores|
+|`B` `W`|Move back by word/forward by word. A word consists of anything that’s not whitespace|
+|`#` `*`|Find the previous/next occurrence of the token under the cursor|
+|`n` `N`|Repeat the last find command forward/backward|
+|`ctrl+o` `ctrl+i`|Move backward/forward through the jump history|
 
 ## Splits
 
