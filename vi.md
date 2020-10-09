@@ -75,6 +75,7 @@
 | -- | -- |
 |`0`|Go to first column|
 |`^`|Go to the first non-blank character of the line|
+|`_`|Go to the first non-blank character of the line|
 |`$`|Go to the end of the line|
 |`g_`|Go to the last non-blank character of the line|
 |`NG`|Go to line `N`|
