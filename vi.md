@@ -105,6 +105,7 @@
 |`#` `*`|Find the previous/next occurrence of the token under the cursor|
 |`n` `N`|Repeat the last find command forward/backward|
 |`ctrl+o` `ctrl+i`|Move backward/forward through the jump history|
+|`ctrl-e` `ctrl-y`|Scroll downwards/upwards|
 
 ## Splits
 
