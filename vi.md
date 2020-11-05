@@ -139,6 +139,8 @@
 |`:.,+20norm .`|Repeat the last command on the next 20 lines|
 |`edit!`|Reload buffer|
 |`:g/log\.Info("DEBUGGING"/d`|Delete all lines that match a pattern|
+|`<C-e>`|Close popup/autocomplete menu
+|
 
 ### Surround
 
