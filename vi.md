@@ -140,8 +140,7 @@
 |`:.,+20norm .`|Repeat the last command on the next 20 lines|
 |`edit!`|Reload buffer|
 |`:g/log\.Info("DEBUGGING"/d`|Delete all lines that match a pattern|
-|`<C-e>`|Close popup/autocomplete menu
-|
+|`<C-e>`|Close popup/autocomplete menu6|
 
 ### Surround
 
@@ -153,9 +152,9 @@
 
 ## Plugins
 
-|Name|Link|
+|Name|Link|Notes|
 |--|--|
-|multiple-cursors|[link](https://github.com/terryma/vim-multiple-cursors)|
+|multiple-cursors|[link](https://github.com/terryma/vim-multiple-cursors)|When vim freezes, use `shift+i`|
 
 ### Vim-Go
 
