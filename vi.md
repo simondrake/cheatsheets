@@ -153,7 +153,7 @@
 ## Plugins
 
 |Name|Link|Notes|
-|--|--|
+|--|--|--|
 |multiple-cursors|[link](https://github.com/terryma/vim-multiple-cursors)|When vim freezes, use `shift+i`|
 
 ### Vim-Go
