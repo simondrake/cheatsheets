@@ -152,9 +152,16 @@
 
 ## Plugins
 
-|Name|Link|Notes|
-|--|--|--|
-|multiple-cursors|[link](https://github.com/terryma/vim-multiple-cursors)|When vim freezes, use `shift+i`|
+### multiple-cursors
+[link](https://github.com/terryma/vim-multiple-cursors)
+
+|Command|Description|
+|--|--|
+|`shift+i`|Use when vim freezes|
+|`<C-n>`|start multicursor and add a virtual cursor + selection on the match|
+|`<C-x>`|skip the next match|
+|`<C-p>`|remove current virtual cursor + selection and go back on previous match|
+|`<A-n>`|start multicursor and directly select all matches|
 
 ### Vim-Go
 
