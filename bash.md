@@ -68,3 +68,13 @@ unset `env | grep -i prefix | awk -F= '{print $1}'`
 |`sed '/^$/d'`|Remove blank lines|
 |`sed '/^  /d'`|Remove lines starting with two spaces|
 |`sed 's/^textToRemove//g'`|Remove text|
+
+## Grep
+
+#### Grep a stream of data
+
+Grep a stream of data for `thing1` or `thing2`, case-insensitively. 
+
+```
+make run | grep --line-buffered -i "thing1\|thing2"
+```
