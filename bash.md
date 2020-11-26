@@ -73,8 +73,6 @@ unset `env | grep -i prefix | awk -F= '{print $1}'`
 
 #### Grep a stream of data
 
-Grep a stream of data for `thing1` or `thing2`, case-insensitively. 
-
 ```
 make run | grep --line-buffered -i "thing1\|thing2"
 ```
