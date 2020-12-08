@@ -16,6 +16,7 @@
 |`aw`|Around word|
 |`J`|Join|
 |`zf`|Fold|
+|`q`|Record|
 
 
 ## Editing
@@ -26,12 +27,16 @@
 |`o` `O`|Open new line (below the current line/above the current line)|
 |`u` `ctrl+r`|Undo and redo|
 |`.`|Repeat the previous command. `5.` repeats it five times|
+|`q<letter>`, `q`, `@<letter>`|Start recording, Stop recording, Replay recording|
+
 
 ### Correcting
 |Command|Description|
 | -- | -- |
 |`t<char>`|Exclusive match: continue up to (but not including) the next `<char>` on this line|
 |`f<char>`|Inclusive match: continue up to (and including) the next `<char>` on this line|
+|`T<char>`|Exclusive match: continue up to (but not including) the previous `<char>` on this line|
+|`F<char>`|Inclusive match: continue up to (and including) the previous `<char>` on this line|
 |`i<char>`|Exclusive inner match: apply to text bounded by `<char>`, where `<char>` is from a limited set of characters that come in pairs, like quotes, parentheses, brackets, etc.|
 |`a<char>`|Inclusive inner match: same as above, except it includes `<char>` on both ends|
 |`v$F<char>d`|Delete to the last `<char>` on this line. `v` - visual mode, `$` - to go the end of the line, `F<char>` - search backwards for `<char>`, `d` - delete|
