@@ -18,6 +18,18 @@ echo file.json | jq '.[] | select( .name | contains("someText") ) | {name: .name
 echo file.json | jq -r '.items | .[] | select(.a.path.to.an.array[]?.key != null) | .name'
 ```
 
+#### Filter objects with multiple conditions 
+
+```
+echo file.json | jq -r '.items | .[] | select((.status == "Running") or (.status == "Scheduled") or .status == "ConfirmationNeeded") | .name'
+```
+
+#### Filter on objects that don't contain text
+
+```
+echo file.json | jq -r '.items | .[] | select(.name | contains("some-text") | not) | .name'
+```
+
 #### Add a field to an object
 
 ```
