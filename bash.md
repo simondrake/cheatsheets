@@ -61,6 +61,12 @@ env | grep -i co2 | awk -F= '{print $1}'
 unset `env | grep -i prefix | awk -F= '{print $1}'`
 ```
 
+## Pad filename with zero's
+
+```
+ls Amazing\ Spider-Man\ v1\ 99.cbz | awk '{printf "%s-%s-%s-%03d.cbz\n", $1, $2, $3, $4}'
+```
+
 ## Sed
 
 |Command|Description|
