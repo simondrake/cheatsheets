@@ -65,6 +65,8 @@ unset `env | grep -i prefix | awk -F= '{print $1}'`
 
 ```
 ls Amazing\ Spider-Man\ v1\ 99.cbz | awk '{printf "%s-%s-%s-%03d.cbz\n", $1, $2, $3, $4}'
+
+for i in *.cbz; do echo ${i} | awk '{printf "mv %s-%s-%s-%d.cbz %s-%s-%s-%03d.cbz \n", $1, $2, $3, $4, $1, $2, $3, $4}'; done
 ```
 
 ## Sed
