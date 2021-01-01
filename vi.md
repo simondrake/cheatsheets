@@ -28,7 +28,11 @@
 |`u` `ctrl+r`|Undo and redo|
 |`.`|Repeat the previous command. `5.` repeats it five times|
 |`q<letter>`, `q`, `@<letter>`|Start recording, Stop recording, Replay recording|
-
+|`:5,10norm! @a`|Execute the macro stored in register `a` on lines 5 through 10|
+|`:5,$norm! @a`|Execute the macro stored in register `a` on lines 5 through the end of the file|
+|`:%norm! @a`|Execute the macro stored in register `a` on all lines|
+|`:g/pattern/norm! @a`|Execute the macro stored in register `a` on all lines matching pattern|
+|`:'<,'>norm! @a`|Execute the macro stored in register `a` on visually selected lines|
 
 ### Correcting
 |Command|Description|
